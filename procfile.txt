@@ -1,1 +1,1 @@
-web:gunicorn Question.wsgi
+web: gunicorn Question.wsgi
