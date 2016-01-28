@@ -1,3 +1,4 @@
+from django import template
 from django.db import models
 from django.conf import settings
 from django.contrib.auth.models import User
@@ -16,6 +17,7 @@ class Question(models.Model):
         return '%s %s' % (self.title, self.description)
         
     def get_absolute_url(self):
-       return reverse('question_detail', args=[str(self.id)])    
-
+       return reverse('question_detail', args=[str(self.id)])  
+     
+    
 
