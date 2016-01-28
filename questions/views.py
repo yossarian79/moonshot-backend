@@ -1,24 +1,3 @@
-# from django.http import HttpResponse
-# from django.views.generic import ListView, DetailView
-# from django.views.generic import CreateView, UpdateView, DeleteView
-# from django.core.urlresolvers import reverse_lazy
-# from .models import Question
-
-# # Create your views here.
-
-# class QuestionList(ListView):
-    # model = Question
-# class QuestionDetail(DetailView):
-    # model = Question
-# class QuestionCreate(CreateView):
-    # model = Question
-    # fields = ['title', 'description'] 
-# class QuestionUpdate(UpdateView):
-    # model = Question
-    # fields = ['title', 'description']
-# class QuestionDelete(DeleteView):
-    # model = Question
-    # success_url = reverse_lazy('question_list') 
 from .models import Question
 from django.http import Http404
 
